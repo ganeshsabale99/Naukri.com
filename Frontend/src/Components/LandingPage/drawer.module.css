@@ -1,0 +1,265 @@
+/* .drawermain{
+    position: fixed;
+    margin-left: 60%;
+    width: 40%;
+    z-index: 1100;
+    background-color: white;
+    height: 100%;
+    padding:20px 40px;
+
+}
+.close{
+    text-align: end;
+    color: gray;
+    padding-right: 10px;
+}
+
+.close:hover{
+    color: black;
+    font-weight: 500;
+    cursor: pointer;
+}
+.dlog1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 80px;
+    width: 90%;
+}
+.blue1{
+    font-weight: 500;
+    color: #285ced;
+}
+
+.dlogin{
+    font-size: 23px;
+    font-weight: 550;
+}
+.dinp{
+    padding: 8px 15px;
+    border: 1px solid black;
+    width: 90%;
+    margin-bottom: 25px;
+}
+.fgtp{
+    margin-top: -20px;
+    padding: 0px 10%;
+    text-align: end;
+}
+.fgtp>p{
+    color: rgb(74,144,226);
+    font-size: 13px;
+    font-weight: 500;
+}
+.dlogbtn{
+    width: 90%;
+    font-size: 18px;
+    font-weight: 500px;
+    background-color:rgb(74,144,226); 
+    color: white;
+    padding: 8px 15px;
+    margin-top: 20px;
+    
+}
+.txtcen{
+    margin-top: 15px;
+    width: 90%;
+    text-align: center;
+}
+.txtcen>p{
+    color: #3b59e1;
+}
+.line{
+    margin-top: 30px;
+    display: flex;
+    width: 90%;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+.line>hr{
+    width: 44%;
+}
+.dsign{
+    margin-top: 20px;
+    width: 90%;
+    padding: 12px;
+    display: flex;
+    gap: 25%;
+    border-radius: 22px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+.dsign>img{
+    width: 22px;
+}
+.pointer:hover{
+    cursor: pointer;
+} */
+
+.dcont {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* optional: dim background */
+    z-index: 1000;
+  }
+  
+  .drawermain {
+    position: fixed;
+    margin-left: 60%;
+    width: 40%;
+    z-index: 1100;
+    background-color: white;
+    height: 100%;
+    padding: 20px 40px;
+  }
+  
+  .close {
+    text-align: end;
+    color: gray;
+    font-size: 24px;
+    padding-right: 10px;
+  }
+  .close:hover {
+    color: black;
+    font-weight: 500;
+    cursor: pointer;
+  }
+  
+  /* This is new */
+  .header {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin-bottom: 30px;
+    justify-content: space-between;
+  }
+  .dlogin {
+    font-size: 24px;
+    font-weight: 600;
+  }
+  .dregister {
+    font-size: 16px;
+    font-weight: 500;
+    color: #3b59e1;
+    cursor: pointer;
+  }
+  
+  .label {
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 6px;
+    text-align: left;
+    width: 90%;
+  }
+  
+  .dinp {
+    padding: 10px 15px;
+    border: 1px solid #cbd6e2;
+    border-radius: 20px;
+    width: 100%;
+    margin-bottom: 20px;
+    outline: none;
+    font-size: 14px;
+  }
+  
+  .passwordWrapper {
+    position: relative;
+    width: 100%;
+  }
+  
+  .passwordWrapper .dinp {
+    padding-right: 60px; /* enough space for "Show" */
+  }
+  
+  .show {
+    position: absolute;
+    top: 30%;
+    right: 15px;
+    transform: translateY(-50%);
+    font-size: 14px;
+    color: #5b6c8f;
+    font-weight: 500;
+    cursor: pointer;
+  }
+  
+  .fgtp {
+    width: 90%;
+    text-align: right;
+    margin-top: -15px;
+    margin-bottom: 20px;
+  }
+  .fgtp > p {
+    color: #3b59e1;
+    font-size: 13px;
+    font-weight: 500;
+  }
+  
+  .dlogbtn {
+    width: 90%;
+    font-size: 16px;
+    font-weight: 600;
+    background-color: #457eff;
+    color: white;
+    padding: 10px 0px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+  }
+  
+  .dlogbtn:hover {
+    background-color: #285ced;
+  }
+  
+  .txtcen {
+    margin-top: 20px;
+    width: 90%;
+    text-align: center;
+  }
+  .txtcen > p {
+    color: #3b59e1;
+    font-size: 14px;
+    font-weight: 500;
+  }
+  
+  .line {
+    margin-top: 25px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 90%;
+  }
+  .line > hr {
+    flex: 1;
+    height: 1px;
+    background-color: #ccc;
+    border: none;
+  }
+  .line > p {
+    font-size: 14px;
+    color: gray;
+  }
+  
+  .dsign {
+    margin-top: 20px;
+    width: 90%;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    border: 1px solid #cbd6e2;
+    border-radius: 30px;
+    cursor: pointer;
+    margin-left: 20px;
+    justify-content: center;
+  }
+  .dsign:hover {
+    background-color: #f5f7fa;
+  }
+  
+  .dsign > img {
+    width: 22px;
+  }
+  
